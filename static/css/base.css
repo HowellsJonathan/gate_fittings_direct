@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: calc(100vh - 180px);
+    font-family: 'industry', sans-serif;
+}
+
+.blue-bg {
+    background-color: #288FBD;
+}
+
+.grey-bg {
+    background-color: #373737;
+}
+
+.top-nav .container, .bottom-nav .container {
+    height: 60px;
+}
+
+.bottom-nav {
+    margin-top: 76px;
+}
+
+.hero-bg {
+    background-color: #646464;
+}
+
+@media (min-width: 992px) {
+    .hero-bg {
+        padding-top: 200px;
+    }
+}
