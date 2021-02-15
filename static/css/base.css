@@ -6,7 +6,7 @@ html {
 
 body {
     height: calc(100vh - 180px);
-    font-family: 'industry', sans-serif;
+    font-family: industry, sans-serif;
 }
 
 .blue-bg {
@@ -16,6 +16,12 @@ body {
 .grey-bg {
     background-color: #373737;
 }
+
+.text-blue {
+    color: #288FBD;
+}
+
+/* Navbar */
 
 .top-nav .container {
     height: 80px;
@@ -43,10 +49,6 @@ ul {
 
 .bottom-nav {
     margin-top: 80px;
-}
-
-.hero-bg {
-    background-color: #646464;
 }
 
 .navbar {
@@ -86,9 +88,30 @@ ul {
     font-size: 20px;
 }
 
+/* Hero Section */
 
-@media (min-width: 992px) {
-    .hero-bg {
-        padding-top: 200px;
-    }
+.hero-banner {
+    background-color: #C8C8C8;
+    min-height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.hero-banner h3 {
+    font-size: 1.3rem;
+}
+
+.hero-banner h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 0 2px 3px #616161;
+}
+
+.hero-banner p {
+    font-size: 1rem;
 }
