@@ -95,7 +95,7 @@ ul {
     min-height: 630px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 92px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -114,4 +114,29 @@ ul {
 
 .hero-banner p {
     font-size: 1rem;
+}
+
+/* Popular Products */
+
+.overlapping-products {
+    position: relative;
+    top: -110px;
+}
+
+.popular-items-cards .card img {
+    height: 200px;
+    margin: 1rem;
+}
+
+.popular-items-cards .card .card-body {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.popular-items-cards .card .card-body .card-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.popular-items-cards {
+    margin-bottom: 2rem;
 }
