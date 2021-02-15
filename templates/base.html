@@ -39,7 +39,30 @@
             <nav class="navbar blue-bg fixed-top top-nav">
                 <div class="container">
                     <a href="#" class="navbar-brand text-white">Gate Fittings Direct</a>
+                    <div class="search">
+                        <input type="text" class="searchSite" placeholder="Search for a product...">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
                     <ul class="list-inline list-unstyled">
+                        <li class="list-inline-item">
+                            {% if request.user.is_authenticated %}
+                                <div>
+                                    <a href="{% url 'account_logout' %}" class="text-white">Log out</a>
+                                    <p class="my-0 text-white">Welcome USERNAME</p>
+                                </div>
+                            {% else %}
+                                <a href="#" class="text-white">
+                                    <div class="text-center">
+                                        <div><i class="fas fa-user"></i></div>
+                                        <p class="my-0">
+                                            Login / Register
+                                        </p>
+                                    </div>
+                                </a>
+                            {% endif %}
+                        </li>
                         <li class="list-inline-item">
                             <a href="" class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link">
                                 <div class="text-center">
@@ -58,53 +81,38 @@
                 </div>
             </nav>
 
-            <nav class="navbar navbar-expand-lg grey-bg fixed-top bottom-nav">
+            <nav class="navbar bottom-nav grey-bg">
                 <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle text-white" id="navbarProductDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Products
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarProductDropdown">
-                                    <a href="#" class="dropdown-item">Gate Fittings</a>
-                                    <a href="#" class="dropdown-item">Gate Furniture</a>
-                                    <a href="#" class="dropdown-item">Electric</a>
-                                    <a href="#" class="dropdown-item">Fasteners</a>
-                                    <a href="#" class="dropdown-item">Tools</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="" class="text-black nav-link dropdown-toggle text-white" id="userProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    My Account
-                                </a>
-                                <div class="dropdown-menu border-0 text-white" aria-labelledby="userProfile">
-                                    {% if request.user.is_authenticated %}
-                                        {% if request.user.is_superuser %}
-                                            <a href="#" class="dropdown-item">Product Management</a>
-                                        {% endif %}
-                                        <a href="#" class="dropdown-item">Profile</a>
-                                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                    {% else %}
-                                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    {% endif %}
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-white">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-white">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
+                    <ul class="list-inline list-unstyled navbar-link-list">
+                        <li class="list-inline-item text-center">
+                            <a href="#" class="nav-link text-white">Gate<br>Hinges</a>
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <a href="#" class="nav-link text-white">Gate<br>Latches</a>
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <a href="#" class="nav-link text-white">Gate<br>Locks</a>
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <a href="#" class="nav-link text-white">Gate<br>Furniture</a>
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <a href="#" class="nav-link text-white">Electric</a>
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <a href="#" class="nav-link text-white">Fasteners &<br>Tools</a>
+                        </li>
+                        <li class="list-inline-item text-center">
+                            {% if request.user.is_authenticated %}
+                                <a href="#" class="nav-link text-white">My Account</a>
+                            {% else %}
+                                <a href="#" class="nav-link text-white">My Account</a>
+                            {% endif %}
+                        </li>
+                        <li class="list-inline-item text-center">
+                            <a href="#" class="nav-link text-white">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>

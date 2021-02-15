@@ -17,12 +17,32 @@ body {
     background-color: #373737;
 }
 
-.top-nav .container, .bottom-nav .container {
+.top-nav .container {
+    height: 80px;
+}
+
+.bottom-nav .container {
     height: 60px;
 }
 
+.navbar-link-list {
+    display: flex;
+    width: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav .container {
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
 .bottom-nav {
-    margin-top: 76px;
+    margin-top: 80px;
 }
 
 .hero-bg {
@@ -35,6 +55,35 @@ body {
 
 .nav-icon {
     font-size: 2rem;
+}
+
+.search {
+    width: 60%;
+    position: relative;
+    display: flex;
+}
+
+.searchSite {
+    width: 60%;
+    border: 3px solid #373737;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+    color: #494949;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #373737;
+    background: #373737;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 
