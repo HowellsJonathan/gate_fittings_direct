@@ -6,7 +6,7 @@ html {
 
 body {
     height: calc(100vh - 180px);
-    font-family: 'industry', sans-serif;
+    font-family: industry, sans-serif;
 }
 
 .blue-bg {
@@ -17,20 +17,126 @@ body {
     background-color: #373737;
 }
 
-.top-nav .container, .bottom-nav .container {
+.text-blue {
+    color: #288FBD;
+}
+
+/* Navbar */
+
+.top-nav .container {
+    height: 80px;
+}
+
+.bottom-nav .container {
     height: 60px;
 }
 
+.navbar-link-list {
+    display: flex;
+    width: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav .container {
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
 .bottom-nav {
-    margin-top: 76px;
+    margin-top: 80px;
 }
 
-.hero-bg {
-    background-color: #646464;
+.navbar {
+    padding: 0;
 }
 
-@media (min-width: 992px) {
-    .hero-bg {
-        padding-top: 200px;
-    }
+.nav-icon {
+    font-size: 2rem;
+}
+
+.search {
+    width: 60%;
+    position: relative;
+    display: flex;
+}
+
+.searchSite {
+    width: 60%;
+    border: 3px solid #373737;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+    color: #494949;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #373737;
+    background: #373737;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Hero Section */
+
+.hero-banner {
+    background-color: #C8C8C8;
+    min-height: 630px;
+    display: flex;
+    justify-content: center;
+    padding-top: 92px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.hero-banner h3 {
+    font-size: 1.3rem;
+}
+
+.hero-banner h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 0 2px 3px #616161;
+}
+
+.hero-banner p {
+    font-size: 1rem;
+}
+
+/* Popular Products */
+
+.overlapping-products {
+    position: relative;
+    top: -110px;
+}
+
+.popular-items-cards .card img {
+    height: 200px;
+    margin: 1rem;
+}
+
+.popular-items-cards .card .card-body {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.popular-items-cards .card .card-body .card-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.popular-items-cards {
+    margin-bottom: 2rem;
 }
