@@ -17,6 +17,10 @@ body {
     background-color: #373737;
 }
 
+.white-bg {
+    background-color: white;
+}
+
 .text-blue {
     color: #288FBD;
 }
@@ -139,4 +143,156 @@ ul {
 
 .popular-items-cards {
     margin-bottom: 2rem;
+}
+
+/* Distributor Brands */
+
+.distributor-for-brands {
+    padding: 80px 0 80px 0;
+}
+
+.small-container {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.distributor-for-brands h3 {
+    font-size: 2.2rem;
+}
+
+#brand-logos div {
+    height: 140px;
+    margin: 30px 0 0 0;
+}
+
+#brand-logos div img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Category Cards */
+
+.cat-card-container {
+    background-color: black;
+    height: 620px;
+}
+
+.cat-card-container img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.category-text {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#category-cards {
+    margin: 160px 0 160px 0;
+}
+
+/* Customer Quote Section */    
+
+.cust-quote-sect {
+    padding: 80px 0 80px 0;
+}
+
+.cust-quote-sect h4 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.cust-quote-sect .col-8 {
+    padding-left: 45px;
+}
+
+.shop-btn {
+    margin-top: 20px;
+    background-color: #288FBD;
+    color: #373737;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.shop-btn i {
+    margin-left: 10px;
+}
+
+.quote-container {
+    padding: 30px;
+    color: #373737;
+    height: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.quote-container h5 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quote-start-pos {
+    position: absolute;
+    top: -28px;
+    left: 25px;
+}
+
+.quote-container i {
+    font-size: 2.5rem;
+}
+
+.quote-end-pos {
+    position: absolute;
+    bottom: -28px;
+    right: -6px;
+}
+
+/* Contact and about us sect */
+
+#contact-about-sect {
+    padding: 160px 0 160px 0;
+}
+
+#contact-about-sect h4 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.contact-img-cont {
+    padding: 0 30px 0 0;
+}
+
+.contact-img-cont img {
+    width: 100%;
+    height: 100%;
+}
+
+.wide-action-btn {
+    background-color: white;
+    border-radius: 0;
+    color: #373737;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.wide-action-btn i {
+    font-size: 2rem;
+}
+
+.contact-about-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
